@@ -1,0 +1,187 @@
+a.navbar-brand {
+    color: rgb(202, 0, 185);
+}
+section{
+    padding: 100px 0;
+    background-color: black;
+    height: 100%;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+ .services{
+    font-family: 'Poppins', sans-serif;
+}
+
+.services .serv-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(202, 0, 185);
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.services .serv-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.services{
+    color:rgb(202, 0, 185);
+    background: #111;
+}
+
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background: rgba(202, 0, 185, 0.204);
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    /* margin: 10px 0 7px 0; */
+    margin-top: 2px;
+    color: rgb(202, 0, 185);
+}
+.language{
+    margin-bottom: 5px;
+    
+
+}
+.skills-bar {
+    padding: 0px 35px;
+  }
+  
+  .skills-bar .bar {
+    margin: 0px 0;
+  }
+  
+  .skills-bar .bar .info span {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .skills-bar .bar .info {
+    margin-top: 8px;
+    color: #f0f0e6;
+  }
+  
+  .skills-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    width: 500px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  .bar .progress-line span {
+    position: absolute;
+    background: #25b79f;
+    height: 100%;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  @keyframes animate {
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  .progress-line .java {
+    width: 96%;
+  }
+  .progress-line .js {
+    width: 80%;
+  }
+  .progress-line .c {
+    width: 70%;
+  }
+  .progress-line .php {
+    width: 90%;
+  }
+  .progress-line .sql {
+    width: 95%;
+  }
+@media screen and (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+    section{
+        height: 100%;
+    }
+}
+@media (max-width: 947px){
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    
+    .services .serv-content .card{
+        width: 100%;
+    }
+}
+@media screen and (max-width:700px) {
+    .skills-bar .bar .progress-line {
+               
+        height: 10px;
+        width: 300px;
+        
+      }
+}

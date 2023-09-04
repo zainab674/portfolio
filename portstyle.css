@@ -1,0 +1,93 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    
+    color: white;
+    scroll-behavior: auto;
+}
+
+* a {
+    text-decoration: none;
+    color: white;
+}
+
+a.navbar-brand {
+    color: rgb(202, 0, 185);
+}
+
+    .portfolio{
+        background-color: black;
+        /* padding-top:10%; */
+        height: 100%;
+    }
+    .proj-heading h1{
+        text-align: center;
+        color: rgb(202, 0, 185);
+        font-size: 2.3rem;
+    }
+        
+      
+    .proj{
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+    .proj img{
+        height: 330px;
+      width: 380px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 20px 10px -10px rgb(37 41 52 / 31%);
+      
+    }
+    
+    .proj .proj-details h2{
+        
+      color: rgb(202, 0, 185);
+      margin-left: 1rem;
+    }
+    
+    .proj .proj-details p{
+      
+      color: rgb(202, 0, 185);
+      margin-left: 1rem;
+      
+    }
+    
+    .proj .proj-details button{
+        background-color: rgb(202, 0, 185);
+        color: black;
+        border: 2px solid rgb(202, 0, 185);
+        padding: 1rem;
+      margin-left: 1rem;
+
+    }
+    .proj .proj-details button:hover{
+        background-color: black;
+        color: white;
+    }
+    @media screen and (max-width:600px) {
+        .portfolio{
+            width: 100vw;
+            padding-top: 15%;
+        }
+        .proj{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+        .proj img{
+            width: 250px;
+            height: 230px;
+        }
+       
+        .proj .proj-details{
+            
+            margin-left: 3rem;
+            margin-top: 2rem;
+          }
+       
+      }
